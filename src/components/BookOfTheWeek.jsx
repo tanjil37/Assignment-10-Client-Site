@@ -7,7 +7,7 @@ const featuredBook = {
   author: "Paulo Coelho",
   genre: "Adventure",
   rating: 4.8,
-  coverImage: "/images/alchemist.jpg",
+  coverImage: "https://media.istockphoto.com/id/173015527/photo/a-single-red-book-on-a-white-surface.jpg?s=612x612&w=0&k=20&c=AeKmdZvg2_bRY2Yct7odWhZXav8CgDtLMc_5_pjSItY=",
   summary:
     "A magical story about following your dreams, discovering your destiny, and the importance of perseverance.",
 };

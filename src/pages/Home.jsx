@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import LatestBooks from "../components/LatestBooks"; // ✅ new import
 import TopGenres from "../components/TopGenres";
-import BookOfTheWeek from "../components/featuredBook";
+import BookOfTheWeek from "../components/BookOfTheWeek";
 
 const Home = () => {
   return (

@@ -3,11 +3,11 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const genres = [
-  { name: "Fantasy", image: "/images/fantasy.jpg" },
-  { name: "Mystery", image: "/images/mystery.jpg" },
-  { name: "Romance", image: "/images/romance.jpg" },
-  { name: "Science Fiction", image: "/images/scifi.jpg" },
-  { name: "Non-fiction", image: "/images/nonfiction.jpg" },
+  { name: "Fantasy", image: "https://i.ibb.co.com/9m7CtgKn/red-hardcover-book-front-cover.jpg" },
+  { name: "Mystery", image: "https://i.ibb.co.com/9m7CtgKn/red-hardcover-book-front-cover.jpg" },
+  { name: "Romance", image: "https://i.ibb.co.com/9m7CtgKn/red-hardcover-book-front-cover.jpg" },
+  { name: "Science Fiction", image: "https://i.ibb.co.com/9m7CtgKn/red-hardcover-book-front-cover.jpg" },
+  { name: "Non-fiction", image: "https://i.ibb.co.com/9m7CtgKn/red-hardcover-book-front-cover.jpg" },
 ];
 
 const TopGenres = () => {
