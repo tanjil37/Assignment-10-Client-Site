@@ -9,11 +9,14 @@ import PrivateRoute from "./PrivateRoute";
 import LoadingSpinner from "../components/LoadingSpinner";
 import BookDetails from "../pages/BookDetails";
 import MyBooks from "../pages/MyBooks";
+import UpdateBook from "../components/UpdateBook";
+import NotFound from "../components/NotFound";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+
     // HydrateFallback: <LoadingSpinner />,
     children: [
       {
@@ -50,12 +53,26 @@ export const router = createBrowserRouter([
         )
       },
       {
+        path: "/update-book/:id",
+        element:(
+          <PrivateRoute>
+            <UpdateBook/>
+          </PrivateRoute>
+        )
+      },
+
+
+      {
         path: "login",
         element: <Login />,
       },
       {
         path: "register",
         element: <Register />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },
