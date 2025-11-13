@@ -9,7 +9,7 @@ import { ToastContainer } from "react-toastify";
 import { Toaster } from "react-hot-toast";
 
 const AddBook = () => {
-  const { user } = useAuthState(auth);
+  const [user] = useAuthState(auth);
   
   const [loading, setLoading] = useState(false);
   const [bookData, setBookData] = useState({
@@ -213,14 +213,3 @@ const AddBook = () => {
 export default AddBook;
 
 
-// import React from 'react';
-
-// const AddBook = () => {
-//     return (
-//         <div>
-//             <h2>add book</h2>
-//         </div>
-//     );
-// };
-
-// export default AddBook;

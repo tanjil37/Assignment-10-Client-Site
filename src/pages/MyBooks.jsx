@@ -8,7 +8,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase/firebase.config";
 
 const MyBooks = () => {
-  const { user } = useAuthState(auth);
+  const [user]  = useAuthState(auth);
   const [myBooks, setMyBooks] = useState([]);
   const [loading, setLoading] = useState(true);
 
