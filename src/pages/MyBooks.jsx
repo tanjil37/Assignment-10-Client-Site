@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase/firebase.config";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const MyBooks = () => {
   const [user]  = useAuthState(auth);
@@ -17,7 +18,7 @@ const MyBooks = () => {
     if (!user?.email) return;
 
     axios
-      .get(`http://localhost:3000/mybooks?email=${user.email}`)
+      .get(`http://localhost:3000/my-books?email=${user.email}`)
       .then((res) => {
         setMyBooks(res.data);
         setLoading(false);
@@ -41,11 +42,7 @@ const MyBooks = () => {
   };
 
   if (loading) {
-    return (
-      <div className="flex justify-center items-center h-[70vh]">
-        <div className="w-10 h-10 border-4 border-dashed border-indigo-600 rounded-full animate-spin"></div>
-      </div>
-    );
+    return <LoadingSpinner/>
   }
 
   return (
